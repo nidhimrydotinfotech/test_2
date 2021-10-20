@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - 7
+  - node
+cache:
+  directories:
+    - node_modules
+install:
+  npm install
+  npm run build
+services:
+  - mongodb
+  - radis-server
+script:
+  nohup npm run start
+  sleep 3
+  npm run test
