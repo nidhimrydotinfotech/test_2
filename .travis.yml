@@ -10,7 +10,7 @@ install:
   npm run build
 services:
   - mongodb
-  - radis-server
+  # - radis-server
 script:
   npm start
   npm run test
