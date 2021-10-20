@@ -12,6 +12,5 @@ services:
   - mongodb
   - radis-server
 script:
-  npm run start
-  sleep 3
+  npm start
   npm run test
